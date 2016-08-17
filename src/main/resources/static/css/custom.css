@@ -1,0 +1,132 @@
+body {
+	padding-top: 60px;
+	background-color: #f0f0f0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+footer {
+	padding-top: 10px;
+	margin: 10px 0px 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #2e3436;
+	box-shadow: 0 -1px 5px #23bab5;
+	border-top: 2px dotted #7C7C7C;
+	padding: 3.5rem 1.6rem
+}
+
+footer p {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: #ffffff;
+}
+
+@media
+(
+min-width
+:
+47em)
+{
+footer {
+	padding: 5.5rem 1.6rem
+}
+
+}
+footer a {
+	color: #ffffff;
+}
+
+footer a:active {
+	color: #ffffff;
+}
+
+footer a:focus {
+	color: #ffffff;
+}
+
+ul#menu li {
+	display: inline;
+}
+
+.card {
+	background-color: #ffffff;
+	box-shadow: 0px 8px 6px -6px #999999;
+	padding: 20px 30px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border: 1px solid #e0e0e0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: rgb(224, 224, 224);
+	border-right-color: rgb(224, 224, 224);
+	border-bottom-color: rgb(224, 224, 224);
+	border-left-color: rgb(224, 224, 224);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-new {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	box-shadow: 1px 1px 1px 1px #23bab5;
+}
+
+.imgs{
+	max-height: 5px;
+	max-width: 5px;
+}
+
+.navbar-new .navbar-brand, .navbar-new .navbar-brand:hover, .navbar-new .navbar-brand:focus
+	{
+	color: #d3d7cf;
+}
+
+.navbar-new .navbar-nav>li>a {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-new .navbar-nav>li>a:hover, .navbar-new .navbar-nav>li>a:focus {
+	background-color: #23bab5;
+}
+
+.navbar-new .navbar-nav>.active>a, .navbar-new .navbar-nav>.active>a:hover,
+	.navbar-new .navbar-nav>.active>a:focus {
+	color: #000000;
+	background-color: #0fa6a1;
+}
+
+.navbar-new .navbar-text {
+	color: #000000;
+}
+
+.navbar-new .navbar-toggle {
+	border-color: #23bab5;
+}
+
+.navbar-new .navbar-toggle:hover {
+	background-color: #d3d7cf;
+}
+
+.navbar-new .navbar-toggle .icon-bar {
+	background-color: #23bab5;
+}

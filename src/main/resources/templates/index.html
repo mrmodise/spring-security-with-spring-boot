@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"></link>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		The logged in user is: <b><span sec:authentication="name"></span></b>
+		<br />
+		<br />
+		 <form sec:authorize="isAuthenticated()" th:action="@{/logout}"  id="frmlogout" method="post">
+		 	<a href="javascript:{}" onclick="document.getElementById('frmlogout').submit(); return false">Logout</a>
+		 </form>
+		<br />
+		<br />
+		<button class="btn btn-primary">Test</button>
+		<div>This is the admin view</div>
+		</div>
+</div>
+
+
+</body>
+</html>
