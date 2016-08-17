@@ -28,5 +28,5 @@ A simple way to add security to your Java Spring Boot application
 ```
 Switch between user nonadmin@gmail.com and admin@gmail.com using the password and observe the differences in the presented information. 
 
-<b>Note</b>The user nonadmin@gmail.com will not be able to access the admin content.
+Note: The user nonadmin@gmail.com will not be able to access the admin content.
 ```
