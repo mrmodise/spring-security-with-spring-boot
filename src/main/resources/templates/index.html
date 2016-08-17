@@ -3,24 +3,33 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8"></meta>
-<title>Insert title here</title>
+<title>Spring Security Demo</title>
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"></link>
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		The logged in user is: <b><span sec:authentication="name"></span></b>
-		<br />
-		<br />
-		 <form sec:authorize="isAuthenticated()" th:action="@{/logout}"  id="frmlogout" method="post">
-		 	<a href="javascript:{}" onclick="document.getElementById('frmlogout').submit(); return false">Logout</a>
-		 </form>
-		<br />
-		<br />
-		<button class="btn btn-primary">Test</button>
-		<div>This is the admin view</div>
+	<div class="container">
+		<div class="row">
+			The logged in user is: <b><span sec:authentication="name"></span></b>
+			<br />
+			<br />
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Eveniet dolorem alias quidem repellat beatae placeat delectus
+				consequatur recusandae autem molestiae est sit neque facilis
+				nesciunt incidunt! Quaerat nesciunt voluptatum reiciendis?</div>
+			<br />
+			<form sec:authorize="isAuthenticated()" th:action="@{/logout}"
+				id="frmlogout" method="post">
+				<a href="javascript:{}" class="btn btn-danger"
+					onclick="document.getElementById('frmlogout').submit(); return false">Logout</a>
+			</form>
+			<br /> <br />
+			<!-- this div is only visible to admin users only -->
+			<div sec:authorize="hasRole('ROLE_ADMIN')">
+			
+			<p class="lead">This is the admin
+				view. Only admin can see this</p></div>
 		</div>
-</div>
+	</div>
 
 
 </body>
