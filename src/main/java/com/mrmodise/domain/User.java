@@ -14,6 +14,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 @Entity
 @Table(name="users")
 public class User {
@@ -86,7 +88,8 @@ public class User {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		this.password = passwordEncoder.encode(password);
 	}
 	
 	public Set<Role> getRoles() {
