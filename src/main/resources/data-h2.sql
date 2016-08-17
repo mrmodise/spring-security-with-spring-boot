@@ -1,5 +1,5 @@
 -- add sample test users
-insert into users values (30, 'admin@gmail.com', 'test','modise', 'password');
+insert into users values (30, 'admin@gmail.com', 'test','modise', '$2a$10$b/BDoXdv8oRdtYY8rU/A7.3NPmVQeGWsSSulPnF0lxTyg6G2VO47S');
 insert into users values (1, 'nonadmin@gmail.com', 'test','modise', 'password');
 
 
