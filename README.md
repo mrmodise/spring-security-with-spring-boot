@@ -5,9 +5,9 @@ Secure a Spring Boot Web app using Spring security: user credentials from relati
 A simple way to add security to your Java Spring Boot application
 
 ### Requirements
-- Internet connect to download Maven dependencies
+- Internet connection to download Maven dependencies
 - An understanding of Spring security
-- Spring Tool Suite (STS)
+- Spring Tool Suite (https://spring.io/tools/sts)
 
 ### Setup
 - Clone the project or download the zip to your preferred location in your computer
