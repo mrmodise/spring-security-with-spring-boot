@@ -22,7 +22,7 @@ A simple way to add security to your Java Spring Boot application
 
 ### Further Testing
 
-Switch between user ```nonadmin@gmail.com`` and ```admin@gmail.com```.
+Switch between user ```nonadmin@gmail.com``` and ```admin@gmail.com```.
 
 Observe the differences in the presented information in the UI
 
