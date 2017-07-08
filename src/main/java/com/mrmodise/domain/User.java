@@ -87,6 +87,10 @@ public class User {
 		return password;
 	}
 
+	/**
+	 * Encrypt user provided password
+	 * @param password
+	 */
 	public void setPassword(String password) {
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		this.password = passwordEncoder.encode(password);
