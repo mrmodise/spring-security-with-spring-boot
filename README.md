@@ -21,13 +21,13 @@ A simple way to add security to your Java Spring Boot application
 
 
 ### Further Testing
-```
+
 Switch between user ```nonadmin@gmail.com`` and ```admin@gmail.com```.
 
 Observe the differences in the presented information in the UI
 
 Note: nonadmin@gmail.com user will not have access to the admin content.
-```
+
 
 ### License
 ```
